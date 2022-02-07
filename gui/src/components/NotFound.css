@@ -1,0 +1,62 @@
+.notFound{
+    height: 70vh;
+    width: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 25px;
+    margin-top: 15%;
+}
+
+.link{
+    position: relative;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    border: 1px solid #c2c2c2;
+    border-radius: 20px;
+    color: whitesmoke;
+    background: rgb(2, 161, 209);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+    /*text in fata*/
+    z-index: 1;
+
+}
+
+
+/*animatie hover buton */
+.link::before{
+    content:'';
+    position: absolute;
+    top:0; left:0; bottom:0; right:0;
+    border-radius: 20px;
+    background-color: #2600ff98;
+    /*in spatele butonului*/
+    z-index: -1; 
+
+    /*animatie incepe din stanga*/
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+   
+}
+
+.link:hover::before{
+    transform: scaleX(1);
+}
+
+.text{
+    font-size: 2em;
+}
+
+.header{
+    background: -webkit-linear-gradient(rgba(34,193,195,1), rgba(166,45,253,0.6113795860140931));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6em;
+}

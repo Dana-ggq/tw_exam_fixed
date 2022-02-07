@@ -1,0 +1,33 @@
+.astronauts{
+    height: 90vh;
+    width: 80vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(241, 238, 238);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.651);
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.tableAstronauts{
+height: 90%;
+width: 90%;
+
+}
+
+.astronautTitle{
+background: -webkit-linear-gradient(rgb(34, 36, 36), rgba(86, 85, 87, 0.611));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 2em;
+}
+
+.divDialog{
+    padding: 10px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
